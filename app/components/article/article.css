@@ -1,0 +1,26 @@
+section{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-inline: 1.5rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cards-list{
+  display: grid;
+  grid-template: repeat(3, minmax(12rem, 1fr)) / repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+
+  & li{
+    gap: 1.25rem;
+    border: 1px solid #eaecee;
+    transition: all .2s linear;
+
+    &:hover{
+      border-color: #1e74aa;
+    }
+  }
+}
+.fs-32{
+  font-size: 2rem !important;
+}

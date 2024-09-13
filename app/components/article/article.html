@@ -1,0 +1,15 @@
+<section class="container-component" id="c_article">
+  <!-- Main Container -->
+  <div class="p-4 bg-white shadow-sm rounded-sm d-flex flex-column">
+    <button type="button" class="btn btn-primary align-self-end mb-4">Rearrange</button>
+    <ul class="list-unstyled cards-list m-0" id="cardsList">
+      {{#each cards}}
+        <li class="card shadow-sm d-flex align-items-center justify-content-center">
+          <span class="d-inline-block fs-32">&#9728;</span>
+          <h4 class="m-0">{{this.title}}</h4>
+          <span class="d-inline-block fs-32 handle">&#9974;</span>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,9 @@
+main{
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  & h1{font-family:OSSemiBold,sans-serif;font-weight:400}
+}
+article{
+  background-color: #f1f6f9;
+}
